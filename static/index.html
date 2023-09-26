@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Card Price Checker</title>
+    <style>
+        body {
+            background-color: #1f1f1f;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        #pokemon-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        label {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        input[type="text"] {
+            padding: 0.5rem;
+            border: 2px solid #ffcc00;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            width: 80%;
+            background-color: #222;
+            color: #fff;
+        }
+
+        button[type="submit"] {
+            background-color: #ffcc00;
+            color: #1f1f1f;
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #ffdb4d;
+        }
+
+        #result {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+
+        p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pokemon Card Price Checker</h1>
+    <form id="pokemon-form">
+        <label for="pokemon-name">Pokemon Name:</label>
+        <input type="text" id="pokemon-name" required>
+        <label for="pokemon-number">Pokemon Number:</label>
+        <input type="text" id="pokemon-number" required>
+        <label for="pokemon-set">Pokemon Set:</label>
+        <input type="text" id="pokemon-set" required>
+        <button type="submit">Check Price</button>
+    </form>
+    <div id="result"></div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
